@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+nav{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f27700;
+}
+
+nav ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul li a{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-size: 100vw;
+    background-position: center;
+}
+nav ul li a:hover{
+    color: #f27700;
+    transition: .3s ease-in-out;
+}
+
+.searchBox{
+    width: 300px;
+    height: 40px;
+    display: flex;
+}
+.searchBox input[type=text]{
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #f27700;
+    border-right: none;
+    color: white;
+    padding-left: 5px;
+}
+.searchBox button{
+    width: 100px;
+    border-radius: 0px 0px 5px 0px;
+    background-color: #f27700;
+    border: 1px solid #f27700;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* Conteudo Principal */
+
+main{
+    width: 90%;
+    height: calc(100vh - 80px);
+    display: flex;
+    
+}
+
+.content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content h1{
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content span{
+    color: #f27700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content p{
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content button{
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #f27700;
+    border: 1px solid #f27700;
+    font-weight: 500;
+}
+
+/* Login */
+
+.login{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login form{
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.793);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.login form h2{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    color: #f27700;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.login form input[type=text], input[type=password]{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-bottom: 2px solid #f27700;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login form input[type=submit]{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f27700;
+    transition: .4s ease-in-out;
+}
+.login form input[type=submit]:hover{
+    color: #f27700;
+    background-color: #fff;
+    border: 2px solid #f27700;
+}
+
+.login form span{
+    width: 100%;
+    text-align: center;
+}
+.login form span a{
+    color: #f27700;
+}
+
+.login form span:last-child{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px
+}
+
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
